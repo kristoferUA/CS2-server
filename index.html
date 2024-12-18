@@ -3,83 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS2-server</title>
+    <title>CS2 Server</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Шапка сайту -->
     <header>
-        <div class="header">
-            <div class="logo">
-                RuneWorld
-                <img src="iconrw.png" alt="RuneWorld Logo" class="logo-image">
-            </div>
-            <div class="moving-shapes">
-    <div class="shape" style="width: 100px; height: 100px; top: 10%; left: 20%;"></div>
-    <div class="shape" style="width: 150px; height: 150px; top: 50%; left: 60%;"></div>
-    <div class="shape" style="width: 200px; height: 200px; top: 30%; left: 10%;"></div>
-    <div class="shape" style="width: 120px; height: 120px; top: 70%; left: 80%;"></div>
-            </div>
-            <nav>
-                <a href="#application">Подати заяву</>
-                <a href="#about">приклад кнопок</a>
-                <a href="#about">  </a>
-            </nav>
+        <div class="logo">
+            <img src="iconrw.png" alt="Logo">
+            CS2 Server
         </div>
+        <nav>
+            <a href="#about">Про сервер</a>
+            <a href="#application">Подати заявку</a>
+            <a href="#donate">Підтримка</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
     </header>
-    <div class="main">
-        <h1 class="main-title">CS2-server</h1>
-        <div class="text-overlay">
-            <h3>Про сервер</h3>
-            <p>Приклад опису сервера</p>
-        </div>
-        <section class="video">
-            <div class="container">
-                <h2>YouTube канал сервера RuneWorld</h2>
-                <p><a href="https://www.youtube.com/@rune_craft2287?si=9OCK7hWKA1nPm93C" target="_blank">Посетить канал RuneWorld на YouTube</a></p>
+
+    <!-- Головний банер -->
+    <section class="main-banner">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Ласкаво просимо на сервер CS2</h1>
+            <p>Отримай незабутній ігровий досвід із нашою спільнотою</p>
+            <div class="cta-buttons">
+                <a href="#application">Подати заявку</a>
+                <a href="#about">Дізнатися більше</a>
             </div>
-        </section>
-        <div class="buttons">
-            <button class="main-button"><a href="#application">Подать заявку</a></button>
-            <button class="main-button"><a href="#contacts">Контакты</a></button>
         </div>
-    </div>
-    <section class="application" id="application">
+    </section>
+
+    <!-- Про сервер -->
+    <section class="about-section" id="about">
         <div class="container">
-            <h2>Подати заяву</h2>
-            <p>Заповніть форму форму і ми зв'яжемося з Вами</p>
+            <h2>Про сервер</h2>
+            <p>CS2 Server пропонує сучасний ігровий досвід із власними унікальними модифікаціями, які створюють комфортну атмосферу для гравців. Приєднуйся вже зараз!</p>
+        </div>
+    </section>
+
+    <!-- Розділ заявок -->
+    <section class="application-section" id="application">
+        <div class="container">
+            <h2>Подати заявку</h2>
+            <p>Заповніть форму, і ми зв'яжемося з вами для участі у нашому проекті:</p>
             <form action="https://formspree.io/f/mvoejaqe" method="POST">
                 <input type="text" name="name" placeholder="Ваш нік" required>
                 <input type="email" name="email" placeholder="Ваш email" required>
-                <input type="text" name="discord" placeholder="Ваш нік в діскорді" required>
-                <input type="text" name="telegram" placeholder="Ваш юзернейм в Telegram" required>
-                <button type="submit">Отправить</button>
+                <input type="text" name="discord" placeholder="Ваш Discord" required>
+                <input type="text" name="telegram" placeholder="Ваш Telegram" required>
+                <button type="submit">Надіслати заявку</button>
             </form>
         </div>
     </section>
-    <section class="about" id="about">
+
+    <!-- YouTube-канал -->
+    <section class="video-section">
         <div class="container">
-            <h2>Античит</h2>
-            <p>Приклад тексту</p>
+            <h2>YouTube Канал</h2>
+            <p>Переглянь наші нові відео та гайди на <a href="https://www.youtube.com/@rune_craft2287" target="_blank">YouTube</a>.</p>
         </div>
     </section>
-     <section class="video">
-            <div class="container">
-                <h2>Фонд сервера</h2>
-                <p><a href="https://send.monobank.ua/jar/ADnoVeXKrG" target="_blank">Пожертвование серверу на оплату хостинга</a></p>
-            </div>
-        </section>
-    <section class="contacts" id="contacts">
-            <h2>Контакты адміністрації</h2>
-            <p><strong>Телефон:</strong> +375 29 169 4702
-            +380 97 214 22 17</p>
-            <p><strong>Email:</strong> admruneworld@gmail.com</p>
+
+    <!-- Розділ підтримки -->
+    <section class="donate-section" id="donate">
+        <div class="container">
+            <h2>Підтримка сервера</h2>
+            <p>Допоможіть серверу залишатися на зв'язку! Ви можете зробити пожертву на оплату хостингу:</p>
+            <a href="https://send.monobank.ua/jar/ADnoVeXKrG" target="_blank" class="donate-button">Підтримати сервер</a>
         </div>
     </section>
+
+    <!-- Контакти -->
+    <section class="contacts-section" id="contacts">
+        <div class="container">
+            <h2>Контакти адміністрації</h2>
+            <p><strong>Телефон:</strong> +375 29 169 4702, +380 97 214 22 17</p>
+            <p><strong>Email:</strong> <a href="mailto:admruneworld@gmail.com">admruneworld@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Футер -->
     <footer>
         <div class="footer">
-            <p>&copy; 2024 CS@-server</p>
+            <p>&copy; 2024 CS2 Server. Усі права захищені.</p>
         </div>
     </footer>
 </body>
