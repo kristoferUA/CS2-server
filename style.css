@@ -1,4 +1,4 @@
-/* style.css */
+/* Загальні стилі */
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -49,14 +49,15 @@ nav a:hover {
     color: #FFA500;
 }
 
+/* Головний банер */
 .main-banner {
     position: relative;
-    text-align: center;
     height: 100vh;
     background: url('main-background.png') no-repeat center center / cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .main-banner .overlay {
@@ -66,105 +67,96 @@ nav a:hover {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
 }
 
 .main-banner .content {
     position: relative;
     z-index: 2;
-    text-align: center;
-    color: #fff;
 }
 
 .main-banner h1 {
     font-size: 64px;
     font-weight: bold;
-    text-transform: uppercase;
     color: #FFA500;
-    text-shadow: 0 0 10px #FFA500, 0 0 20px #FFA500;
-    animation: fadeIn 2s ease-in-out;
+    text-shadow: 0 0 15px #FFA500, 0 0 30px #FFA500;
+    margin-bottom: 20px;
 }
 
 .main-banner p {
-    font-size: 24px;
-    margin: 20px 0;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
-.main-banner .cta-buttons {
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.main-banner .cta-buttons a {
+.cta-buttons a {
     display: inline-block;
-    background-color: #FFA500;
-    color: #000;
+    background: #FFA500;
+    color: #1e1e1e;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
+    margin: 0 10px;
     transition: background-color 0.3s, transform 0.2s;
 }
 
-.main-banner .cta-buttons a:hover {
+.cta-buttons a:hover {
     background-color: #e69500;
     transform: translateY(-5px);
 }
 
-.video-section, .about-section {
+/* Розділи */
+section {
     padding: 80px 20px;
     text-align: center;
-    background-color: #2b2b2b;
 }
 
-.video-section h2, .about-section h2 {
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
     font-size: 36px;
-    font-weight: bold;
     color: #FFA500;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
-.video-section p a, .about-section p a {
-    color: #FFA500;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s;
+form input, form button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
 }
 
-.video-section p a:hover, .about-section p a:hover {
+form input {
+    background: #333;
     color: #fff;
 }
 
+form button {
+    background: #FFA500;
+    color: #1e1e1e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #e69500;
+}
+
+/* Футер */
 footer {
-    background: #1e1e1e;
-    padding: 40px 20px;
+    background: #111;
+    padding: 20px;
     text-align: center;
     color: #fff;
     font-size: 14px;
-    border-top: 2px solid #333;
-}
-
-footer a {
-    color: #FFA500;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #fff;
-}
-
-/* Анімації */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
