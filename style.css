@@ -2,219 +2,169 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: url('main-background.png') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #1e1e1e;
     color: #fff;
     overflow-x: hidden;
 }
 
 header {
-    background-color: #333;
-    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    animation: slideDown 1s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #FFA500;
+header .logo {
     display: flex;
     align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFA500;
 }
 
-.logo-image {
+header .logo img {
     width: 40px;
-    margin-left: 10px;
-    animation: spin 3s linear infinite;
+    margin-right: 10px;
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+nav {
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
-    margin: 0 15px;
-    font-weight: 500;
-    transition: color 0.3s, transform 0.3s;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
     color: #FFA500;
-    transform: scale(1.1);
 }
 
-.main {
+.main-banner {
+    position: relative;
     text-align: center;
-    padding: 50px 20px;
-    animation: fadeIn 2s ease-out;
+    height: 100vh;
+    background: url('main-background.png') no-repeat center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.main-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.main-banner .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+.main-banner h1 {
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFA500;
+    text-shadow: 0 0 10px #FFA500, 0 0 20px #FFA500;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.main-banner p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.main-banner .cta-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.main-banner .cta-buttons a {
+    display: inline-block;
+    background-color: #FFA500;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.main-banner .cta-buttons a:hover {
+    background-color: #e69500;
+    transform: translateY(-5px);
+}
+
+.video-section, .about-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #2b2b2b;
+}
+
+.video-section h2, .about-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFA500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.video-section p a, .about-section p a {
+    color: #FFA500;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.video-section p a:hover, .about-section p a:hover {
+    color: #fff;
+}
+
+footer {
+    background: #1e1e1e;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    border-top: 2px solid #333;
+}
+
+footer a {
+    color: #FFA500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Анімації */
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
-    }
-}
-
-.main-title {
-    font-size: 48px;
-    font-weight: 700;
-    color: #FFA500;
-    margin-bottom: 20px;
-    animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 5px #FFA500, 0 0 10px #FFA500;
-    }
-    to {
-        text-shadow: 0 0 20px #FFA500, 0 0 30px #FFA500;
-    }
-}
-
-.text-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 20px auto;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-.buttons {
-    margin-top: 30px;
-}
-
-.main-button {
-    background-color: #FFA500;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
-    cursor: pointer;
-}
-
-.main-button a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.main-button:hover {
-    background-color: #e69500;
-    transform: translateY(-5px);
-}
-
-form input {
-    display: block;
-    width: 80%;
-    max-width: 400px;
-    margin: 10px auto;
-    padding: 10px;
-    border: 1px solid #555;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    transition: box-shadow 0.3s, transform 0.3s;
-}
-
-form input:focus {
-    box-shadow: 0 0 10px #FFA500;
-    transform: scale(1.05);
-}
-
-form button {
-    background-color: #FFA500;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-form button:hover {
-    background-color: #e69500;
-    transform: translateY(-5px);
-}
-
-footer {
-    background-color: #333;
-    text-align: center;
-    padding: 20px;
-    color: #fff;
-    margin-top: 30px;
-}
-
-footer p {
-    margin: 0;
-}
-
-.moving-shapes {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    pointer-events: none;
-}
-
-.shape {
-    position: absolute;
-    border-radius: 50%;
-    background-color: rgba(255, 165, 0, 0.5);
-    animation: float 6s infinite ease-in-out;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0) translateX(0);
-    }
-    50% {
-        transform: translateY(-20px) translateX(10px);
-    }
-    100% {
-        transform: translateY(0) translateX(0);
     }
 }
