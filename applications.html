@@ -1,22 +1,48 @@
-<main>
-    <section class="application-section">
-        <div class="container">
-            <h2>Подача заявок</h2>
-            <p>Приєднуйся до нашого проекту! Просто заповніть форму, і ми зв'яжемося з вами.</p>
-            <form action="https://formspree.io/f/mvoejaqe" method="POST">
-                <input type="text" name="name" placeholder="Ваш нік" required>
-                <input type="email" name="email" placeholder="Ваш email" required>
-                <input type="text" name="discord" placeholder="Ваш Discord" required>
-                <input type="text" name="telegram" placeholder="Ваш Telegram" required>
-                <button type="submit">Надіслати заявку</button>
-            </form>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подача заявок | CS2 Server</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/iconrw.png" alt="Logo">
+            CS2 Server
         </div>
-    </section>
+        <nav>
+            <a href="index.html">Про сервер</a>
+            <a href="applications.html">Подача заявок</a>
+            <a href="reviews.html">Відгуки</a>
+            <a href="contacts.html">Контакти</a>
+            <a href="youtube.html">YouTube-канал</a>
+        </nav>
+    </header>
 
-    <section class="how-it-works">
-        <div class="container">
-            <h2>Як це працює?</h2>
-            <p>Після подачі заявки наші адміністратори перевірять ваші дані та зв'яжуться з вами для надання доступу до сервера.</p>
+    <main>
+        <section class="application-section">
+            <div class="container">
+                <h2>Подача заявок</h2>
+                <p>Приєднуйся до нашого проекту! Просто заповніть форму, і ми зв'яжемося з вами.</p>
+                <form action="https://formspree.io/f/mvoejaqe" method="POST">
+                    <input type="text" name="name" placeholder="Ваш нік" required>
+                    <input type="email" name="email" placeholder="Ваш email" required>
+                    <input type="text" name="discord" placeholder="Ваш Discord" required>
+                    <input type="text" name="telegram" placeholder="Ваш Telegram" required>
+                    <button type="submit">Надіслати заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 CS2 Server. Усі права захищені.</p>
         </div>
-    </section>
-</main>
+    </footer>
+</body>
+</html>
