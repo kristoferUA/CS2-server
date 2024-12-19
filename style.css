@@ -24,7 +24,7 @@ header .logo {
     align-items: center;
     font-size: 24px;
     font-weight: bold;
-    color: #FFA500;
+    color: #ff6100;
 }
 
 header .logo img {
@@ -46,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #FFA500;
+    color: #ff6100;
 }
 
 /* Головний банер */
@@ -77,8 +77,8 @@ nav a:hover {
 .main-banner h1 {
     font-size: 64px;
     font-weight: bold;
-    color: #FFA500;
-    text-shadow: 0 0 15px #FFA500, 0 0 30px #FFA500;
+    color: #ff6100;
+    text-shadow: 0 0 15px #ff6100, 0 0 30px #ff6100;
     margin-bottom: 20px;
 }
 
@@ -89,7 +89,7 @@ nav a:hover {
 
 .cta-buttons a {
     display: inline-block;
-    background: #FFA500;
+    background: #ff6100;
     color: #1e1e1e;
     text-transform: uppercase;
     font-size: 18px;
@@ -119,7 +119,7 @@ section {
 
 h2 {
     font-size: 36px;
-    color: #FFA500;
+    color: #ff6100;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -141,7 +141,7 @@ form input {
 }
 
 form button {
-    background: #FFA500;
+    background: #ff6100;
     color: #1e1e1e;
     font-weight: bold;
     cursor: pointer;
