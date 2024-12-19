@@ -1,48 +1,89 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Про сервер | CS2 Server</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Сервер CS2</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="images/iconrw.png" alt="Logo">
-            CS2 Server
+            <img src="logo.png" alt="Лого">
+            CS2 Сервер
         </div>
         <nav>
-            <a href="index.html">Про сервер</a>
-            <a href="applications.html">Подача заявок</a>
-            <a href="reviews.html">Відгуки</a>
-            <a href="contacts.html">Контакти</a>
-            <a href="youtube.html">YouTube-канал</a>
+            <a href="#about">Про нас</a>
+            <a href="#application">Заявки</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#youtube">YouTube</a>
+            <a href="#contact">Контакти</a>
         </nav>
     </header>
 
+    <div class="main-banner">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Ласкаво просимо на сервер CS2!</h1>
+            <p>Пориньте у світ напружених битв та незабутніх моментів.</p>
+            <div class="cta-buttons">
+                <a href="#application">Подати заявку</a>
+                <a href="#about">Дізнатись більше</a>
+            </div>
+        </div>
+    </div>
+
     <main>
-        <section class="about-section">
+        <section id="about">
             <div class="container">
-                <h1 class="main-title">Про наш сервер</h1>
-                <p>CS2 Server — це сучасний проект, створений для забезпечення унікального ігрового досвіду. Наш сервер пропонує комфортну гру для всіх гравців.</p>
+                <h2>Про наш сервер</h2>
+                <p>Наш CS2 сервер створено для справжніх шанувальників Counter-Strike. Ми пропонуємо якісний геймплей, стабільну роботу та дружню спільноту.</p>
             </div>
         </section>
 
-        <section class="anticheat-section">
+        <section id="application" class="application-section">
             <div class="container">
-                <h2>Античит</h2>
-                <p>Ми серйозно ставимося до чесної гри. Наш античит забезпечує максимальний захист від шахрайства. Будьте впевнені, що кожна гра буде справедливою!</p>
+                <h2>Подача заявок</h2>
+                <p>Приєднуйся до нашого проекту! Просто заповніть форму, і ми зв'яжемося з вами.</p>
+                <form action="https://formspree.io/f/mvoejaqe" method="POST">
+                    <input type="text" name="name" placeholder="Ваш нік" required>
+                    <input type="email" name="email" placeholder="Ваш email" required>
+                    <input type="text" name="discord" placeholder="Ваш Discord" required>
+                    <input type="text" name="telegram" placeholder="Ваш Telegram" required>
+                    <button type="submit">Надіслати заявку</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h2>Галерея</h2>
+                <p>Дивіться скріншоти та відео з наших ігор!</p>
+                <img src="gallery-image1.png" alt="Скріншот 1">
+                <img src="gallery-image2.png" alt="Скріншот 2">
+            </div>
+        </section>
+
+        <section id="youtube">
+            <div class="container">
+                <h2>Наш YouTube канал</h2>
+                <p>Підписуйтесь на наш канал для ще більше контенту!</p>
+                <a href="https://www.youtube.com/@kristofer15020" target="_blank">Відвідати YouTube</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Контакти</h2>
+                <p>Зв'яжіться з нами у Discord або Telegram!</p>
+                <p>Discord: <a href="#">Ваш сервер</a></p>
+                <p>Telegram: <a href="#">Ваш канал</a></p>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer">
-            <p>&copy; 2024 CS2 Server. Усі права захищені.</p>
-        </div>
+        <p>&copy; 2024 CS2 Сервер. Всі права захищені.</p>
     </footer>
 </body>
 </html>
